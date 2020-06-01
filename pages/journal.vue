@@ -1,5 +1,5 @@
 <template>
   <section>
-    <h1>Welcome</h1>
+    <h1>Journal</h1>
   </section>
 </template>
