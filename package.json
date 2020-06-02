@@ -5,6 +5,7 @@
   "author": "Hugh Mosno",
   "private": true,
   "scripts": {
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -15,6 +16,7 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "node-sass": "^4.14.1",
     "nuxt": "^2.0.0",
+    "push-dir": "^0.4.1",
     "sass": "^1.26.7",
     "sass-loader": "^8.0.2"
   },
