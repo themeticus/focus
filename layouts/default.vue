@@ -1,5 +1,7 @@
-<template>
+<template>  
   <div id="app">
+    <background />
+    <identity />
     <navigation />
     <transition name="slide">
       <nuxt />
@@ -8,29 +10,18 @@
 </template>
 
 <script>
-  import Navigation from '~/components/navigation.vue'
+  import Identity from '~/components/identity';
+  import Navigation from '~/components/navigation';
+  import Background from '~/components/background';
   export default {
     components: {
-      Navigation
+      Identity, Navigation, Background
     }
   }
 </script>
 
-<style lang="scss">
+<style>
 
-body {
-  margin: 0; border: 0; padding: 0;
-  background: #555
-}
-
-#app {
-  overflow: hidden;
-}
-
-section {
-  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-  width: 100vw;
-  height: 100vh;
-}
+@import "~/assets/css/base.css"
 
 </style>
