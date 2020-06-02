@@ -1,14 +1,14 @@
 
 <template>
     <div class="identity">
-    	<a href="/"><img src="~/assets/img/bakedonline-lght.svg" /></a>
+    	<img src="~/assets/img/bakedonline-lght.svg" />
     </div>
 </template>
 
 
 <style>
 
-.identity a {
+.identity {
     display: block;
     background: black;
     color: white;

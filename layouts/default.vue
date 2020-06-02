@@ -22,6 +22,7 @@
 
 <style>
 
-@import "~/assets/css/base.css"
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+@import "~/assets/css/base.css";
 
 </style>
