@@ -1,4 +1,4 @@
-<template>
+<template>  	
   <div id="menuToggle">  
       <input type="checkbox"> 
       <span ></span> 
@@ -15,7 +15,34 @@
   </div>
 </template>
 
+<script>
+	if (process.client) {
+		window.document.addEventListener('click', function (event) {
+		    if (!event.target.closest('#menuToggle')) {
+		        document.querySelector('#menuToggle>input').checked=false
+		    }
+		}, false);
+	}
+</script>
+
 <style>
+
+#omninav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    box-shadow: 0px 1px 2px 0px rgba(60,64,67,0.3), 0px 2px 6px 2px rgba(60,64,67,0.15);
+    color: #3C4043;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 36px 0 16px;
+    -webkit-font-smoothing: antialiased;
+    z-index: 1000;
+}
 
 /* menu transition */
 
