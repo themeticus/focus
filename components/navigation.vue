@@ -25,7 +25,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 
 #omninav {
     position: fixed;
@@ -62,6 +62,12 @@
 	-webkit-transition: 1s all ease;
 	transition: 1s all ease;
 	opacity: 0.9;
+	@media screen and (max-width: 400px) {
+  		top: -14px;
+  		left: 0px;
+  		width: 64px;	
+  		height: 53px;	
+  	}
 }
 #menuToggle:hover {
 	opacity: 1;
@@ -77,7 +83,10 @@
 	cursor: pointer;
 	opacity: 0;
 	z-index: 2;
-	-webkit-touch-callout: none;
+	-webkit-touch-callout: none;	
+	@media screen and (max-width: 400px) {
+  		width: 64px;		
+  	}
 }
 #menuToggle span {
 	display: block;
@@ -142,6 +151,10 @@
 	width: 160px;
 	padding-top: 62px;
 	height: 100vh;
+	@media screen and (max-width: 400px) {
+  		top: 0px;
+  		left: 0px
+	}
 }
 .menu li {
   font-size: 2rem;

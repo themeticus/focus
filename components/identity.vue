@@ -6,7 +6,7 @@
 </template>
 
 
-<style>
+<style lang="scss">
 
 .identity {
     display: block;
@@ -18,6 +18,11 @@
     padding: 13px 20px 7px;
     width:200px;
     z-index: 9999 !important;
+    transition: left .6s ease;
+ 
+    @media (max-width: 400px) {
+        left: 64px
+    }
  }
 
 </style>
