@@ -72,6 +72,6 @@ export default {
       })
     ],
   },
-  router: { base: '/' },
+  router: { base: '/focus/' },
 }
 
