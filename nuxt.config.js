@@ -1,4 +1,6 @@
 
+const webpack = require("webpack");
+
 export default {
   mode: 'universal',
   /*
@@ -13,8 +15,11 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap' }
-    ]
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap' }
+    ],
+    // script: [
+    //     { src: 'http://localhost:3000/extjs/jquery.min.js', type: 'text/javascript' },
+    // ]
   },
   /*
   ** Customize the progress-bar color
@@ -30,6 +35,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+   { src: '~/plugins/router-loaded', mode: 'client' },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -57,8 +63,15 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
-    }
+    vendor: ["jquery"],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      })
+    ],
   },
-  router: { base: '/focus/' },
+  router: { base: '/' },
 }
+

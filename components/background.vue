@@ -9,7 +9,7 @@
 <style>
 
 .bg {
-  animation:slides 3s ease-in-out infinite alternate;
+  animation:slides 16s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #9E9E9E 50%, #607D8B 50%);
   bottom:0;
   left:-50%;
@@ -22,11 +22,11 @@
 
 .bg2 {
   animation-direction:alternate-reverse;
-  animation-duration:4s;
+  animation-duration:17s;
 }
 
 .bg3 {
-  animation-duration:5s;
+  animation-duration:18s;
 }
 
 @keyframes slides {

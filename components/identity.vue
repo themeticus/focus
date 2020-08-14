@@ -14,15 +14,15 @@
     color: white;
     position: fixed;
     top: 0;
-    left: 0;
-    padding: 13px 20px 7px;
+    left: 53px;
+    padding: 25px 20px 18px;
     width:200px;
     z-index: 9999 !important;
     transition: left .6s ease;
  
-    @media (max-width: 400px) {
+/*    @media (max-width: 400px) {
         left: 64px
-    }
+    }*/
  }
 
 </style>

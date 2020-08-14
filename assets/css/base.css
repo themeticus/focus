@@ -1,37 +1,37 @@
-
-html,body { height: 100%; font-size: 100% }
+html,body { height: 100%; font-size: 100%; font-family: FuturaStd-Book, monospace, sans-serif; }
 h1 { padding: 0; margin: 0; border: 0 }
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box }
+* { margin: 0px; padding: 0px; }
 body,#app {
   margin: 0; border: 0; padding: 0;
-  overflow: hidden;
-  font-family: 'Roboto', sans-serif
+  min-width: 400px; overflow-x: hidden;
 }
 section {
-  background-color: rgba(40,49,56,0.95);
+  /*background-color: rgba(40,49,56,0.95);*/
   width: 100vw;
-  height: 100vh;
+/*  height: 100vh;*/
 }
 section h1 {
-    position: fixed;
-    font-weight: bold;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    margin: 0;
-    top: 0;
-    width: auto;
-    text-align: left;
-    left: 200px;
-    background-color: #d6d6d6;
-    padding: 10px;
-    text-transform: uppercase;
-    font-family: Lato, sans-serif;
-    z-index: 99999999;
-    transition: left .6s ease
+  position: fixed;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin: 0;
+  top: 0;
+  width: auto;
+  text-align: left;
+  left: 253px;
+  background-color: #00000066;
+  padding: 23px 13px 20px 13px;
+  text-transform: uppercase;
+  z-index: 99999999;
+  transition: left .6s ease;
+  font-family:  FuturaStd-Book, monospace, sans-serif;
 }
-
+/*
 @media screen and (max-width: 400px) {
   section h1 {
     left: 264px
   }
 }
+*/

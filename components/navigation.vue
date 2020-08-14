@@ -1,4 +1,5 @@
-<template>  	
+<template>  
+<div id="appnav">		
   <div id="menuToggle">  
       <input type="checkbox"> 
       <span ></span> 
@@ -13,6 +14,7 @@
     	<li><nuxt-link to="/connect">Connect</nuxt-link></li>                         
       </ul>
   </div>
+</div>
 </template>
 
 <script>
@@ -21,27 +23,20 @@
 		    if (!event.target.closest('#menuToggle')) {
 		        document.querySelector('#menuToggle>input').checked=false
 		    }
+		    if (!event.target.closest('#smenuToggle')) {
+		        document.querySelector('#smenuToggle>input').checked=false
+		    }		    
 		}, false);
 	}
 </script>
 
 <style lang="scss">
 
-#omninav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #000000;
-    box-shadow: 0px 1px 2px 0px rgba(60,64,67,0.3), 0px 2px 6px 2px rgba(60,64,67,0.15);
-    color: #3C4043;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64px;
-    padding: 0 36px 0 16px;
-    -webkit-font-smoothing: antialiased;
-    z-index: 1000;
+#appnav {
+
+	@media screen and (max-width: 400px) {
+
+  	}    
 }
 
 /* menu transition */
@@ -49,25 +44,26 @@
 #menuToggle {
 	display: block;
 	position: fixed;
-	top: -3px;
-	right: 0px;
+	top: 0px;
+	left: 0px;
 	z-index: 6679;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	    user-select: none;
 	padding: 0px;
-	width: 75px;
-	height: 73px;
+	width: 52px;
+	height: 63.8px;
 	-webkit-transition: 1s all ease;
 	transition: 1s all ease;
 	opacity: 0.9;
-	@media screen and (max-width: 400px) {
+	background-color: black;
+/*	@media screen and (max-width: 400px) {
   		top: -14px;
   		left: 0px;
   		width: 64px;	
   		height: 53px;	
-  	}
+  	}*/
 }
 #menuToggle:hover {
 	opacity: 1;
@@ -77,22 +73,23 @@
 }
 #menuToggle input {
 	display: block;
-	width: 75px;
-	height: 73px;
+	width: 52px;
+    height: 55px;
 	position: absolute;
 	cursor: pointer;
 	opacity: 0;
 	z-index: 2;
 	-webkit-touch-callout: none;	
-	@media screen and (max-width: 400px) {
-  		width: 64px;		
-  	}
+/*	@media screen and (max-width: 400px) {
+  		width: 64px;	
+  		height: 53px	
+  	}*/
 }
 #menuToggle span {
 	display: block;
-	width: 45px;
+	width: 28px;
 	height: 2px;
-	margin: 24px 0px -16px 16px;
+	margin: 24px 0px -18px 10px;
 	position: relative;
 	background: #555;
 	border-radius: 3px;
@@ -103,6 +100,9 @@
 	transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+/*	@media screen and (max-width: 400px) {
+  		margin: 24px 0px -18px 10px;
+  	}*/
 }
 #menuToggle span:hover {
 	background: #fff;
@@ -134,7 +134,7 @@
 .menu {
 	position: fixed;
 	top: 0px;
-	right: -2px;
+	left: 0px;
 	margin: 0 0 0;
 	background-color: black;
 	list-style-type: none;
@@ -151,10 +151,10 @@
 	width: 160px;
 	padding-top: 62px;
 	height: 100vh;
-	@media screen and (max-width: 400px) {
+/*	@media screen and (max-width: 400px) {
   		top: 0px;
   		left: 0px
-	}
+	}*/
 }
 .menu li {
   font-size: 2rem;
@@ -171,7 +171,7 @@
 .menu li a {
 	text-decoration: none;
 	text-align: left;
-	font-family: Lato, sans-serif;
+	font-family:  FuturaStd-Book, monospace, sans-serif;
 	padding: 11px 10px;
 	font-size: 20px;
 	display: inline-block;
@@ -207,11 +207,11 @@
 	/**/
 }
 .slide-enter { 
-	transform: translateX(100%) 
+	transform: translateX(-100vw) 
 	/* */
 }
-.slide-leave-to { 
-	transform: translateX(0)
+.slide-leave { 
+	transform: translateX(-100vw)
 	/* */
 }
 
