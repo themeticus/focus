@@ -1,7 +1,7 @@
 
 <template>
     <div class="identity">
-    	<img src="~/assets/img/bakedonline-lght.svg" />
+    	<img src="~assets/img/bakedonline-lght.svg" />
     </div>
 </template>
 
