@@ -58,6 +58,7 @@
 	transition: 1s all ease;
 	opacity: 0.9;
 	background-color: black;
+	height: 64px;
 /*	@media screen and (max-width: 400px) {
   		top: -14px;
   		left: 0px;

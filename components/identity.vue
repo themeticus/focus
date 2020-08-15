@@ -19,6 +19,7 @@
     width:200px;
     z-index: 9999 !important;
     transition: left .6s ease;
+    height: 64px;
  
 /*    @media (max-width: 400px) {
         left: 64px

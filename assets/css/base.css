@@ -27,6 +27,7 @@ section h1 {
   z-index: 99999999;
   transition: left .6s ease;
   font-family:  FuturaStd-Book, monospace, sans-serif;
+  height: 64px;
 }
 /*
 @media screen and (max-width: 400px) {

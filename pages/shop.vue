@@ -2,16 +2,11 @@
   <section>
     <h1>Shop</h1>
 
-		<!--     
-			<div style="background-image: url(~/static/icon.png); background-repeat: repeat; height: 100%">
-			<img src="~/assets/img/landing-1.jpg" height="auto" width="100%" /></div> 
-		-->
-
 	<div id="sidebar">
 
 	    <div id="basket" class="basket" data-totalitems="0">
 	        
-	    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.665 9.068l-3.665-1.66v14l3.665 2.592 14.335-2.155v-14.845l-14.335 2.068zm-1.665 1.441l1 .453v10.118l-1-.707v-9.864zm14 9.615l-11 1.653v-10.881l11-1.587v10.815zm-2-15.833l-.001 1.749c0 .246-.18.455-.423.492-.303.045-.576-.19-.576-.495v-1.746c.001-.691-.231-1.304-.653-1.726-.368-.37-.847-.565-1.384-.565-1.547 0-2.96 1.558-2.963 3.268v1.681c0 .247-.181.457-.425.494-.302.046-.575-.189-.575-.494l.001-1.683c.004-2.261 1.866-4.266 3.962-4.266 1.717 0 3.039 1.387 3.037 3.291zm-9.999 2.209v-2.235c.004-2.26 1.866-4.265 3.962-4.265.492 0 .944.125 1.35.332-.423.17-.822.4-1.188.683l-.162-.015c-1.547 0-2.961 1.558-2.963 3.268v2.232c0 .248-.182.458-.427.494-.3.045-.572-.187-.572-.494z"/></svg>
+	    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 30 30"><path d="M6.665 9.068l-3.665-1.66v14l3.665 2.592 14.335-2.155v-14.845l-14.335 2.068zm-1.665 1.441l1 .453v10.118l-1-.707v-9.864zm14 9.615l-11 1.653v-10.881l11-1.587v10.815zm-2-15.833l-.001 1.749c0 .246-.18.455-.423.492-.303.045-.576-.19-.576-.495v-1.746c.001-.691-.231-1.304-.653-1.726-.368-.37-.847-.565-1.384-.565-1.547 0-2.96 1.558-2.963 3.268v1.681c0 .247-.181.457-.425.494-.302.046-.575-.189-.575-.494l.001-1.683c.004-2.261 1.866-4.266 3.962-4.266 1.717 0 3.039 1.387 3.037 3.291zm-9.999 2.209v-2.235c.004-2.26 1.866-4.265 3.962-4.265.492 0 .944.125 1.35.332-.423.17-.822.4-1.188.683l-.162-.015c-1.547 0-2.961 1.558-2.963 3.268v2.232c0 .248-.182.458-.427.494-.3.045-.572-.187-.572-.494z"/></svg>
 	    </div>
 
 	    <div id="smenuToggle">
@@ -23,8 +18,6 @@
 	    </div>
 
 	</div>
-
-	<!-- <div id="checkout">PAY</div> -->
 
 	<div id="shop">
 
@@ -318,22 +311,22 @@ section h1 {
 
 	#sidebar{
 	    padding: 0px;
-	    height: 80px;
+	    height: 64px;
 	    z-index: 9 !important;
 	    position: fixed;
 	    top: 0px;
 	    right: 0px;
-		width: 100%;
+			width: 100%;
 	    /*background-color: wheat;*/
 	}
 
 	#shop {
-		margin-top: 100px
+		margin-top: 80px
 	}
 
 	#cart{
 		padding:0px; 
-		width:100%;
+		width:360px;
 	}
 
 	.product{
@@ -791,32 +784,9 @@ section h1 {
 	    margin-right: 28px;
 	    display: block;
 	}
-	.cart-item:hover, .delete-item{display:block;cursor:pointer}
+	.cart-item:hover, .delete-item{display:block;cursor:pointer; opacity: 0.7}
 
-	#info{
-		position: absolute;
-		top: 20px;
-		left: 676px;
-		text-align: center;
-		width: 413px;
 
-	}
-	#info p{font-size:15px; padding:3px;color:#b1b1b3}
-	#info a{text-decoration:none;} 
-	#checkout{
-		background-color: #bca892;
-	    font-size: 13px;
-	    font-weight: 700;
-	    position: fixed;
-	    top: 33px;
-	    right: 55px;
-	    color: #000;
-	    display: none;
-	    letter-spacing: 1px;
-	    padding: 5px 15px;
-	    border-radius: 15px;
-	    z-index: 9;
-	}
 
 	.product.large{
 		width:639px;
@@ -965,36 +935,38 @@ section h1 {
 	}
 
 	.basket {
-		position: fixed;
-	    top: 20px;
-	    right: 20px;
-	    width: 50px;
-	    height: 50px;
-	    background: #bca892;
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    border-radius: 25px;
+    position: fixed;
+    top: 8px;
+    right: 10px;
+    width: 54px;
+    height: 54px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    display: none;
+    padding: 13px 13px;
+    border: 2px solid orange;
+    outline: none;
 	}
 	.basket i {
 	  font-size: 25px;
 	  color: white;
 	}
 	.basket:before {
-		content: attr(data-totalitems);
-	    font-size: 12px;
-	    font-weight: 600;
-	    position: absolute;
-	    top: -7px;
-	    right: -7px;
-	    background: orange;
-	    line-height: 24px;
-	    padding: 0 5px;
-	    height: 24px;
-	    min-width: 14px;
-	    color: white;
-	    text-align: center;
-	    border-radius: 24px;
+content: attr(data-totalitems);
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: -7px;
+    right: -4px;
+    background: orange;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    color: black;
+    text-align: center;
+    border-radius: 30px
 	}
 	.basket.shake {
 	  animation: shakeCart .4s ease-in-out forwards;
@@ -1085,8 +1057,8 @@ section h1 {
 
 	#smenuToggle input {
 	    display: block;
-	    width: 75px;
-	    height: 73px;
+			width: 74px;
+    	height: 66px;
 	    position: absolute;
 	    cursor: pointer;
 	    opacity: 0;
@@ -1102,7 +1074,7 @@ section h1 {
 
 	.smenu {
 	position: fixed;
-	    top: 66px;
+	    top: 65px;
 	    right: 0px;
 	    margin: 0;
 	    background-color: #fffffff5;
@@ -1118,22 +1090,6 @@ section h1 {
 	    border-radius: 0px;
 	}
 
-	/* individual cart items */
-
-
-	.cart-item {
-	    
-	}
-
-	.cart-item .img-wrap {
-	    
-	}
-
-	.cart-item img {
-	    
-	}
-
-
 
 </style>
 
@@ -1144,13 +1100,71 @@ import $ from 'jquery'
 export default {
   mounted: () => {
     
-
 	$(function(){ 
 
 	 	var cart, cartTotal, newCartTotal, button;
 
+		$('.product').each(function(i, el){					
+
+			// Lift card and show stats on Mouseover
+			$(el).find('.make3D').hover(function(){
+					$(this).parent().css('z-index', "20");
+					$(this).addClass('animate');		
+				 }, function(){
+					$(this).removeClass('animate');			
+					$(this).parent().css('z-index', "1");
+			});	
+			
+			// Flip card to the back side
+			$(el).find('.view_gallery').click(function(){	
+				$(el).find('.make3D').addClass('flip-10');			
+				setTimeout(function(){					
+				$(el).find('.make3D').removeClass('flip-10').addClass('flip90').find('div.shadow').show().fadeTo( 80 , 1, function(){
+						$(el).find('.product-front, .product-front div.shadow').hide();															
+					});
+				}, 50);
+				
+				setTimeout(function(){
+					$(el).find('.make3D').removeClass('flip90').addClass('flip190');
+					$(el).find('.product-back').show().find('div.shadow').show().fadeTo( 90 , 0);
+					setTimeout(function(){				
+						$(el).find('.make3D').removeClass('flip190').addClass('flip180').find('div.shadow').hide();						
+						setTimeout(function(){
+							$(el).find('.make3D').css('transition', '100ms ease-out');			
+							$(el).find('.cx, .cy').addClass('s1');
+							setTimeout(function(){$(el).find('.cx, .cy').addClass('s2');}, 100);
+							setTimeout(function(){$(el).find('.cx, .cy').addClass('s3');}, 200);								
+						}, 100);
+					}, 100);			
+				}, 150);			
+			});			
+			
+			// Flip card back to the front side
+			$(el).find('.flip-back').click(function(){		
+				$(el).find('.make3D').removeClass('flip180').addClass('flip190');
+				setTimeout(function(){
+					$(el).find('.make3D').removeClass('flip190').addClass('flip90');
+			
+					$(el).find('.product-back div.shadow').css('opacity', 0).fadeTo( 100 , 1, function(){
+						$(el).find('.product-back, .product-back div.shadow').hide();
+						$(el).find('.product-front, .product-front div.shadow').show();
+					});
+				}, 50);
+				setTimeout(function(){
+					$(el).find('.make3D').removeClass('flip90').addClass('flip-10');
+					$(el).find('.product-front div.shadow').show().fadeTo( 100 , 0);
+					setTimeout(function(){						
+						$(el).find('.product-front div.shadow').hide();
+						$(el).find('.make3D').removeClass('flip-10').css('transition', '100ms ease-out');		
+						$(el).find('.cx, .cy').removeClass('s1 s2 s3');			
+					}, 100);			
+				}, 150);			
+			});				
+		});
+
 		$('.addtocart').on('click', function(){
 
+				$('.basket').fadeIn(600);
 		    button = $(this);
 		    cart = $('#basket');
 		    cartTotal = cart.attr('data-totalitems'); 
@@ -1166,274 +1180,64 @@ export default {
 		    },1000)
 		});
 
+		$('.add_to_cart').on('click', function(){
+			var productCard = $(this).parent();
+			var position = productCard.offset();
+			var productImage = $(productCard).find('img').get(0).src;
+			var productName = $(productCard).find('.product_name').get(0).innerHTML;
+			var productPrice = $(productCard).find('.product_price').get(0).innerHTML;
 
-	
-	$(".largeGrid").click(function(){											
-    $(this).find('a').addClass('active');
-    $('.smallGrid a').removeClass('active');
-    
-    $('.product').addClass('large').each(function(){											
-		});			
-
-		// setTimeout(function(){
-		// 	$('.info-large').show();	
-		// }, 200);
-
-		// setTimeout(function(){
-
-		// 	$('.view_gallery').trigger("click");	
-		// }, 300);								
-		
-		return false;				
-	});
-
-	// $(".smallGrid").click(function(){		        
-   
-	//     $(this).find('a').addClass('active');
-	//     $('.largeGrid a').removeClass('active');
-	    
-	// 	$('div.product').removeClass('large');
-	// 	$(".make3D").removeClass('animate');	
-	   
-	//     $('.info-large').fadeOut("fast");
-	// 	setTimeout(function(){								
-	// 			$('div.flip-back').trigger("click");
-	// 	}, 400);
-	// 	return false;
-
-	// });	
-	
-	// $(".smallGrid").click(function(){
-	// 	$('.product').removeClass('large');			
-	// 	return false;
-	// });
-  
-  	// $('.colors-large a').click(function(){return false;});	
-
-	$('.product').each(function(i, el){					
-
-		// Lift card and show stats on Mouseover
-		$(el).find('.make3D').hover(function(){
-				$(this).parent().css('z-index', "20");
-				$(this).addClass('animate');
-				$(this).find('div.carouselNext, div.carouselPrev').addClass('visible');			
-			 }, function(){
-				$(this).removeClass('animate');			
-				$(this).parent().css('z-index', "1");
-				$(this).find('div.carouselNext, div.carouselPrev').removeClass('visible');
-		});	
-		
-		// Flip card to the back side
-		$(el).find('.view_gallery').click(function(){	
-			
-			// $(el).find('div.carouselNext, div.carouselPrev').removeClass('visible');
-			$(el).find('.make3D').addClass('flip-10');			
-			setTimeout(function(){					
-			$(el).find('.make3D').removeClass('flip-10').addClass('flip90').find('div.shadow').show().fadeTo( 80 , 1, function(){
-					$(el).find('.product-front, .product-front div.shadow').hide();															
-				});
-			}, 50);
-			
 			setTimeout(function(){
-				$(el).find('.make3D').removeClass('flip90').addClass('flip190');
-				$(el).find('.product-back').show().find('div.shadow').show().fadeTo( 90 , 0);
-				setTimeout(function(){				
-					$(el).find('.make3D').removeClass('flip190').addClass('flip180').find('div.shadow').hide();						
-					setTimeout(function(){
-						$(el).find('.make3D').css('transition', '100ms ease-out');			
-						$(el).find('.cx, .cy').addClass('s1');
-						setTimeout(function(){$(el).find('.cx, .cy').addClass('s2');}, 100);
-						setTimeout(function(){$(el).find('.cx, .cy').addClass('s3');}, 200);				
-						// $(el).find('div.carouselNext, div.carouselPrev').addClass('visible');				
-					}, 100);
-				}, 100);			
-			}, 150);			
-		});			
-		
-		// Flip card back to the front side
-		$(el).find('.flip-back').click(function(){		
-			
-			$(el).find('.make3D').removeClass('flip180').addClass('flip190');
-			setTimeout(function(){
-				$(el).find('.make3D').removeClass('flip190').addClass('flip90');
-		
-				$(el).find('.product-back div.shadow').css('opacity', 0).fadeTo( 100 , 1, function(){
-					$(el).find('.product-back, .product-back div.shadow').hide();
-					$(el).find('.product-front, .product-front div.shadow').show();
-				});
-			}, 50);
-			
-			setTimeout(function(){
-				$(el).find('.make3D').removeClass('flip90').addClass('flip-10');
-				$(el).find('.product-front div.shadow').show().fadeTo( 100 , 0);
-				setTimeout(function(){						
-					$(el).find('.product-front div.shadow').hide();
-					$(el).find('.make3D').removeClass('flip-10').css('transition', '100ms ease-out');		
-					$(el).find('.cx, .cy').removeClass('s1 s2 s3');			
-				}, 100);			
-			}, 150);			
-			
-		});				
-	
-		// makeCarousel(el);
-	});
-	
-	// $('.add-cart-large').each(function(i, el){
+				var cartItem = "<div class='cart-item' style='height: 60px; padding: 5px 0px; border-bottom: 1px dotted wheat;'><div class='img-wrap' style='width: 50px; height: 50px; overflow: hidden; border: 2px solid #fff; float: left; margin: 0px 10px;'><img src='"
+				+productImage+"' alt='' style='width: 100%; position: relative; top: -10px;' /></div><span style='color: #393c45; display: block; font-size: 14px;'>"
+				+productName+"</span><strong style='color: #614107d4; font-size: 16px;'>"
+				+productPrice+"</strong><div class='delete-item' style='cursor: pointer; width: 30px; height: 30px; float: right; margin-right: 28px; display: block;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmM1LjUxNCAwIDEwIDQuNDg2IDEwIDEwcy00LjQ4NiAxMC0xMCAxMC0xMC00LjQ4Ni0xMC0xMCA0LjQ4Ni0xMCAxMC0xMHptMC0yYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02IDE2LjUzOGwtNC41OTItNC41NDggNC41NDYtNC41ODctMS40MTYtMS40MDMtNC41NDUgNC41ODktNC41ODgtNC41NDMtMS40MDUgMS40MDUgNC41OTMgNC41NTItNC41NDcgNC41OTIgMS40MDUgMS40MDUgNC41NTUtNC41OTYgNC41OTEgNC41NSAxLjQwMy0xLjQxNnoiLz48L3N2Zz4=' style='width: 100%; position: relative; top: -10px;'></div></div>";			
 
-	// 	$(el).click(function(){
-		// var carousel = $(this).parent().parent().find(".carousel-container");
-		// var img = carousel.find('img').eq(carousel.attr("rel"))[0];						
-		// var position = $(img).offset();	
+				$("#cart .empty").hide();			
+				$("#cart").append(cartItem);
+				$("#checkout").fadeIn(500);
+				
+				$("#cart .cart-item").last()
+					.addClass("flash")
+					.find(".delete-item").click(function(){
 
-		//var productName = $(this).parent().find('h4').get(0).innerHTML;				
-
-		// $("body").append('<div class="floating-cart"></div>');		
-		// var cart = $('div.floating-cart');		
-		// $("<img src='"+img.src+"' class='floating-image-large' />").appendTo(cart);
-		
-		// $(cart).css({'top' : position.top + 'px', "left" : position.left + 'px'}).fadeIn("slow").addClass('moveToCart');		
-		// setTimeout(function(){$("body").addClass("MakeFloatingCart");}, 800);
-		
-	// 	setTimeout(function(){
-	// 	$('div.floating-cart').remove();
-	// 	$("body").removeClass("MakeFloatingCart");
+						cart = $('#basket');
+					    cartTotal = cart.attr('data-totalitems'); 
+					    newCartTotal = parseInt(cartTotal) - 1;
 
 
-	// 	var cartItem = 
-	// 	"<div class='cart-item'><div class='img-wrap'><img src='"
-	// 	+img.src+
-	// 	"' alt='' /></div><span>"
-	// 	+productName+
-	// 	"</span><strong>"
-	// 	+productName+
-	// 	"</strong><div class='delete-item'></div></div>";			
-
-	// 	$("#cart .empty").hide();			
-	// 	$("#cart").append(cartItem);
-	// 	$("#checkout").fadeIn(500);
-		
-	// 	$("#cart .cart-item").last()
-	// 		.addClass("flash")
-	// 		.find(".delete-item").click(function(){
-	// 			$(this).parent().fadeOut(300, function(){
-	// 				$(this).remove();
-	// 				if($("#cart .cart-item").size() == 0){
-	// 					$("#cart .empty").fadeIn(500);
-	// 					$("#checkout").fadeOut(500);
-	// 				}
-	// 			})
-	// 		});
-	// 	    setTimeout(function(){
-	// 		$("#cart .cart-item").last().removeClass("flash");
-	// 	}, 10 );
-		
-	// }, 1000);
-			
-	// });
-
-	// })
-
-	
-	/* ----  Image Gallery Carousel   ---- */
-	// function makeCarousel(el){
-	
-		
-		// var carousel = $(el).find('.carousel ul');
-		// var carouselSlideWidth = 315;
-		// var carouselWidth = 0;	
-		// var isAnimating = false;
-		// var currSlide = 0;
-		// $(carousel).attr('rel', currSlide);
-		
-		// // building the width of the casousel
-		// $(carousel).find('li').each(function(){
-		// 	carouselWidth += carouselSlideWidth;
-		// });
-		// $(carousel).css('width', carouselWidth);
-		
-		// // Load Next Image
-		// $(el).find('div.carouselNext').on('click', function(){
-		// 	var currentLeft = Math.abs(parseInt($(carousel).css("left")));
-		// 	var newLeft = currentLeft + carouselSlideWidth;
-		// 	if(newLeft == carouselWidth || isAnimating === true){return;}
-		// 	$(carousel).css({'left': "-" + newLeft + "px",
-		// 						   "transition": "300ms ease-out"
-		// 						 });
-		// 	isAnimating = true;
-		// 	currSlide++;
-		// 	$(carousel).attr('rel', currSlide);
-		// 	setTimeout(function(){isAnimating = false;}, 300);			
-		// });
-		
-		// // Load Previous Image
-		// $(el).find('div.carouselPrev').on('click', function(){
-		// 	var currentLeft = Math.abs(parseInt($(carousel).css("left")));
-		// 	var newLeft = currentLeft - carouselSlideWidth;
-		// 	if(newLeft < 0  || isAnimating === true){return;}
-		// 	$(carousel).css({'left': "-" + newLeft + "px",
-		// 						   "transition": "300ms ease-out"
-		// 						 });
-		// 	isAnimating = true;
-		// 	currSlide--;
-		// 	$(carousel).attr('rel', currSlide);
-		// 	setTimeout(function(){isAnimating = false;}, 300);						
-		// });
-	// }
-
-	$('.add_to_cart').click(function(){
-		var productCard = $(this).parent();
-		var position = productCard.offset();
-		var productImage = $(productCard).find('img').get(0).src;
-		var productName = $(productCard).find('.product_name').get(0).innerHTML;
-		var productPrice = $(productCard).find('.product_price').get(0).innerHTML;
-
-		setTimeout(function(){
-			var cartItem = "<div class='cart-item' style='height: 60px; padding: 5px 0px; border-bottom: 1px dotted wheat;'><div class='img-wrap' style='width: 50px; height: 50px; overflow: hidden; border: 2px solid #fff; float: left; margin: 0px 10px;'><img src='"
-			+productImage+"' alt='' style='width: 100%; position: relative; top: -10px;' /></div><span style='color: #393c45; display: block; font-size: 14px;'>"
-			+productName+"</span><strong style='color: #614107d4; font-size: 16px;'>"
-			+productPrice+"</strong><div class='delete-item' style='cursor: pointer; width: 30px; height: 30px; float: right; margin-right: 28px; display: block;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmM1LjUxNCAwIDEwIDQuNDg2IDEwIDEwcy00LjQ4NiAxMC0xMCAxMC0xMC00LjQ4Ni0xMC0xMCA0LjQ4Ni0xMCAxMC0xMHptMC0yYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02IDE2LjUzOGwtNC41OTItNC41NDggNC41NDYtNC41ODctMS40MTYtMS40MDMtNC41NDUgNC41ODktNC41ODgtNC41NDMtMS40MDUgMS40MDUgNC41OTMgNC41NTItNC41NDcgNC41OTIgMS40MDUgMS40MDUgNC41NTUtNC41OTYgNC41OTEgNC41NSAxLjQwMy0xLjQxNnoiLz48L3N2Zz4=' style='width: 100%; position: relative; top: -10px;'></div></div>";			
-
-			$("#cart .empty").hide();			
-			$("#cart").append(cartItem);
-			$("#checkout").fadeIn(500);
-			
-			$("#cart .cart-item").last()
-				.addClass("flash")
-				.find(".delete-item").click(function(){
-
-					cart = $('#basket');
-				    cartTotal = cart.attr('data-totalitems'); 
-				    newCartTotal = parseInt(cartTotal) - 1;
+						$(this).parent().fadeOut(300, function(){
+							$(this).remove();
 
 
-					$(this).parent().fadeOut(300, function(){
-						$(this).remove();
+						      cart.addClass('shake').attr('data-totalitems', newCartTotal);
+						      setTimeout(function(){
+						        cart.removeClass('shake');
+						      },600)
 
 
-					      cart.addClass('shake').attr('data-totalitems', newCartTotal);
-					      setTimeout(function(){
-					        cart.removeClass('shake');
-					      },600)
-
-
-						if($("#cart .cart-item").size() == 0){
-							$("#cart .empty").fadeIn(300);
-							$("#checkout").fadeOut(300);
-						}
-					})
-				});
- 		    setTimeout(function(){
-				$("#cart .cart-item").last().removeClass("flash");
-			}, 10 );
-			
-		}, 1000);
-	});
-  	
-
+							if( newCartTotal < 1){
+								$('.basket').fadeOut(600);
+							}
+						})
+					});
+	 		    setTimeout(function(){
+					$("#cart .cart-item").last().removeClass("flash");
+				}, 10 );
+				
+				}, 1000);
+			});
 	  })
 
+		$(document).on("mouseenter", ".cart-item", function() {
+		    this.style.backgroundColor='#bca892';
+		});
 
-  }
-}
+		$(document).on("mouseleave", ".cart-item", function() {
+		    this.style.backgroundColor='transparent';
+		});
+
+  } // mounted
+} // default
 
 </script>
