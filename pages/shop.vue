@@ -354,13 +354,13 @@ section h1 {
 
 	@media only screen and (max-width: 1200px) {
 	  .product {
-	      width: calc(50% - 40px)!important;
+	      width: calc(50% - 45px)!important;
 	  }
 	}  
 
 	@media only screen and (max-width: 600px) {
 	  .product {
-	      width: calc(100% - 40px)!important;
+	      width: calc(100% - 60px)!important;
 	  }
 	}  
 
@@ -936,16 +936,16 @@ section h1 {
 
 	.basket {
     position: fixed;
-    top: 8px;
-    right: 10px;
-    width: 54px;
-    height: 54px;
+    top: 9px;
+    right: 15px;
+    width: 49px;
+    height: 49px;
     background-color: transparent;
     align-items: center;
     justify-content: center;
     border-radius: 32px;
     display: none;
-    padding: 13px 13px;
+    padding: 10px 10px;
     border: 2px solid orange;
     outline: none;
 	}
@@ -961,9 +961,9 @@ content: attr(data-totalitems);
     top: -7px;
     right: -4px;
     background: orange;
-    line-height: 24px;
-    height: 24px;
-    width: 24px;
+line-height: 22px;
+    height: 22px;
+    width: 22px;
     color: black;
     text-align: center;
     border-radius: 30px
@@ -1191,7 +1191,7 @@ export default {
 				var cartItem = "<div class='cart-item' style='height: 60px; padding: 5px 0px; border-bottom: 1px dotted wheat;'><div class='img-wrap' style='width: 50px; height: 50px; overflow: hidden; border: 2px solid #fff; float: left; margin: 0px 10px;'><img src='"
 				+productImage+"' alt='' style='width: 100%; position: relative; top: -10px;' /></div><span style='color: #393c45; display: block; font-size: 14px;'>"
 				+productName+"</span><strong style='color: #614107d4; font-size: 16px;'>"
-				+productPrice+"</strong><div class='delete-item' style='cursor: pointer; width: 30px; height: 30px; float: right; margin-right: 28px; display: block;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmM1LjUxNCAwIDEwIDQuNDg2IDEwIDEwcy00LjQ4NiAxMC0xMCAxMC0xMC00LjQ4Ni0xMC0xMCA0LjQ4Ni0xMCAxMC0xMHptMC0yYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02IDE2LjUzOGwtNC41OTItNC41NDggNC41NDYtNC41ODctMS40MTYtMS40MDMtNC41NDUgNC41ODktNC41ODgtNC41NDMtMS40MDUgMS40MDUgNC41OTMgNC41NTItNC41NDcgNC41OTIgMS40MDUgMS40MDUgNC41NTUtNC41OTYgNC41OTEgNC41NSAxLjQwMy0xLjQxNnoiLz48L3N2Zz4=' style='width: 100%; position: relative; top: -10px;'></div></div>";			
+				+productPrice+"</strong><div class='delete-item' style='cursor: pointer; width: 30px; height: 30px; float: right; margin-right: 28px; display: block;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmM1LjUxNCAwIDEwIDQuNDg2IDEwIDEwcy00LjQ4NiAxMC0xMCAxMC0xMC00LjQ4Ni0xMC0xMCA0LjQ4Ni0xMCAxMC0xMHptMC0yYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02IDE2LjUzOGwtNC41OTItNC41NDggNC41NDYtNC41ODctMS40MTYtMS40MDMtNC41NDUgNC41ODktNC41ODgtNC41NDMtMS40MDUgMS40MDUgNC41OTMgNC41NTItNC41NDcgNC41OTIgMS40MDUgMS40MDUgNC41NTUtNC41OTYgNC41OTEgNC41NSAxLjQwMy0xLjQxNnoiLz48L3N2Zz4=' style='width: 100%; position: relative; top: -10px;right: -5px;'></div></div>";			
 
 				$("#cart .empty").hide();			
 				$("#cart").append(cartItem);
