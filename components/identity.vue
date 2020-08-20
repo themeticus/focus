@@ -1,7 +1,7 @@
 
 <template>
     <div class="identity">
-    	<img src="~/assets/img/bakedonline-lght.svg" />
+    	<img src="~/assets/img/bakedonline-lght.png" />
     </div>
 </template>
 
@@ -16,7 +16,7 @@
     top: 0;
     left: 53px;
     padding: 25px 20px 18px;
-    width:200px;
+    width:120px;
     z-index: 9999 !important;
     transition: left .6s ease;
     height: 64px;

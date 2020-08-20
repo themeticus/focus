@@ -18,7 +18,7 @@ export default {
     "~/assets/css/base.css"
   ],
   plugins: [
-   { src: '~/plugins/router-loaded', mode: 'client' },
+
   ],
   buildModules: [
   ],

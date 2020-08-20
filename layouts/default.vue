@@ -1,13 +1,13 @@
 <template>  
   <div id="app">
-    <div class="theOuterRim">
+<!--     <div class="theOuterRim"> -->
     <background />
     <identity />
     <navigation />
     <transition :name="transitionName" mode="in-out">
       <nuxt class="child-view" />
     </transition>
-    </div>
+ <!--    </div> -->
   </div>
 </template>
 

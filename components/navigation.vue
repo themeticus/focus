@@ -18,16 +18,26 @@
 </template>
 
 <script>
-	if (process.client) {
-		window.document.addEventListener('click', function (event) {
-		    if (!event.target.closest('#menuToggle')) {
-		        document.querySelector('#menuToggle>input').checked=false
-		    }
-		    if (!event.target.closest('#smenuToggle')) {
-		        document.querySelector('#smenuToggle>input').checked=false
-		    }		    
-		}, false);
-	}
+	export default {
+	data() {
+		return {
+			// 
+		}
+	},
+  	mounted: function() {
+	  	if (process.client) {
+			window.document.addEventListener('click', function (event) {
+			    if (!event.target.closest('#menuToggle')) {
+			        document.querySelector('#menuToggle>input').checked=false
+			    }
+			    // if (!event.target.closest('#smenuToggle')) {
+			    //     document.querySelector('#smenuToggle>input').checked=false
+			    // }		    
+			}, false);
+		}
+  	}
+}
+
 </script>
 
 <style lang="scss">
