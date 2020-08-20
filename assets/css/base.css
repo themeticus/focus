@@ -4,7 +4,11 @@ h1 { padding: 0; margin: 0; border: 0 }
 * { margin: 0px; padding: 0px; }
 body,#app {
   margin: 0; border: 0; padding: 0;
-  min-width: 400px; overflow-x: hidden;
+  min-width: 400px; /*overflow-x: hidden;*/
+}
+.theOuterRim {
+  position:relative;
+  min-height: 100%;
 }
 section {
   /*background-color: rgba(40,49,56,0.95);*/
