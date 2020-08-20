@@ -539,6 +539,7 @@ section h1 {
 	       -moz-transition: all 200ms ease-out; 
 	         -o-transition: all 200ms ease-out; 
 	            transition: all 200ms ease-out; 
+	  border-radius: 25px;
 	}
 	.add_to_cart:hover{	
 		background:#fff;
@@ -571,6 +572,8 @@ section h1 {
 	       -moz-transition: all 200ms ease-out; 
 	         -o-transition: all 200ms ease-out; 
 	            transition: all 200ms ease-out; 
+
+	  border-radius: 25px;
 	}
 	.view_gallery:hover{	
 		background:#fff;
