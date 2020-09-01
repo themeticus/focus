@@ -1,5 +1,5 @@
 <template>
-  <section style="background: red">
+  <section>
     <h1>Events</h1>
   </section>
 </template>

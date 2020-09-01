@@ -38,9 +38,9 @@
 	                        <p>Calf length</p>                                            
 	                        
 	                        <div class="product-options">
-	                        <strong>SIZES</strong>
-	                        <span>S, M, L, XL</span>
-	                        <strong>COLORS</strong>
+	                        <strong>SIZES</strong> <!-- component -->
+	                        <span>S, M, L, XL</span> 
+	                        <strong>COLORS</strong> <!-- component -->
 	                        <div class="colors">
 	                            <div class="c-blue"><span></span></div>
 	                            <div class="c-red"><span></span></div>
@@ -55,7 +55,7 @@
 	            <div class="product-back">
 	                <div class="shadow"></div>
 	                <div >
-	                    <div class="product_1_2 productSlider" ></div>           
+	                    <div class="product_1_2 productSlider" ></div>  <!-- component -->         
 	                </div>
 	                <div class="flip-back">
 	                    <div class="cy"></div>

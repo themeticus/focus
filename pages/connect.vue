@@ -1,5 +1,5 @@
 <template>
-  <section style="background: orange">
+  <section>
     <h1>Connect</h1>
   </section>
 </template>

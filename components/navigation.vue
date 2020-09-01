@@ -29,10 +29,7 @@
 			window.document.addEventListener('click', function (event) {
 			    if (!event.target.closest('#menuToggle')) {
 			        document.querySelector('#menuToggle>input').checked=false
-			    }
-			    // if (!event.target.closest('#smenuToggle')) {
-			    //     document.querySelector('#smenuToggle>input').checked=false
-			    // }		    
+			    }	    
 			}, false);
 		}
   	}
@@ -129,8 +126,8 @@
 }
 #menuToggle input:checked ~ span {
 	opacity: 1;
-	-webkit-transform: rotate(45deg) translate(2px, -5px);
-	        transform: rotate(45deg) translate(2px, -5px);
+	-webkit-transform: rotate(45deg) translate(6px, -5px);
+	        transform: rotate(45deg) translate(6px, -5px);
 	background: white;
 }
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -139,8 +136,8 @@
 	        transform: rotate(0deg) scale(0.2, 0.2);
 }
 #menuToggle input:checked ~ span:nth-last-child(2) {
-	-webkit-transform: rotate(-45deg) translate(0px, 8px);
-	        transform: rotate(-45deg) translate(0px, 8px);
+	-webkit-transform: rotate(-45deg) translate(4px, 7px);
+	        transform: rotate(-45deg) translate(4px, 7px);
 }
 .menu {
 	position: fixed;
@@ -158,9 +155,9 @@
 	transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-	 opacity: 0.8;
+	 opacity: 0.9;
 	width: 160px;
-	padding-top: 62px;
+	padding-top: 64px;
 	height: 100vh;
 /*	@media screen and (max-width: 400px) {
   		top: 0px;
@@ -171,25 +168,26 @@
   font-size: 2rem;
   display: block;
   background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
-  float: right;
+  /*float: right;*/
   clear: both;               
   padding: 5px 20px 5px 10px;
   margin: 0 2px 2px;
   color: white;
   width: 155px;
-  transition: 1s all ease;
+  /*transition: 1s all ease;*/
 }
 .menu li a {
 	text-decoration: none;
 	text-align: left;
 	font-family:  FuturaStd-Book, monospace, sans-serif;
 	padding: 11px 10px;
-	font-size: 20px;
-	display: inline-block;
-	float: right;
+	font-size: 1.2rem;
+	display: block;
+	/*float: right;*/
 	color: wheat;
 	clear: both;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 .menu li .active {
 	border-right: 5px solid black;
