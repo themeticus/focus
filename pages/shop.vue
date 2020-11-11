@@ -1114,9 +1114,7 @@ export default {
   	newCartTotal = this.getTotal();
   	
 		$(function(){ 		 	
-
-			console.log(newCartTotal)
-
+			
 			document.addEventListener('click', function (event) {
 			    if (!event.target.closest('#smenuToggle')) {
 			    	  if ($('#smenuToggle>input').length > 0) {

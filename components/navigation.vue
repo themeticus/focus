@@ -8,8 +8,9 @@
       <ul class="menu">
     	<li><nuxt-link to="/journal">Journal</nuxt-link></li>
     	<li><nuxt-link to="/listen">Listen</nuxt-link></li>
-    	<li><nuxt-link to="/watch">Watch</nuxt-link></li>
-    	<li><nuxt-link to="/shop">Shop</nuxt-link></li>
+    	<li><nuxt-link to="/shop-slider">Slider</nuxt-link></li>
+    	<li><nuxt-link to="/shop-products">Shop 1</nuxt-link></li>
+    	<li><nuxt-link to="/shop">Shop 2</nuxt-link></li>
     	<li><nuxt-link to="/events">Events</nuxt-link></li>
     	<li><nuxt-link to="/connect">Connect</nuxt-link></li>                         
       </ul>
@@ -28,11 +29,11 @@
 	  	if (process.client) {
 			window.document.addEventListener('click', function (event) {
 			    if (!event.target.closest('#menuToggle')) {
-			        document.querySelector('#menuToggle>input').checked=false
+			        document.querySelector('#menuToggle>input').checked=false;			        		       	
 			    }	    
 			}, false);
 		}
-  	}
+  	}, 
 }
 
 </script>
