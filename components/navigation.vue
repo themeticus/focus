@@ -8,9 +8,7 @@
       <ul class="menu">
     	<li><nuxt-link to="/journal">Journal</nuxt-link></li>
     	<li><nuxt-link to="/listen">Listen</nuxt-link></li>
-    	<li><nuxt-link to="/shop-slider">Slider</nuxt-link></li>
-    	<li><nuxt-link to="/shop-products">Shop 1</nuxt-link></li>
-    	<li><nuxt-link to="/shop">Shop 2</nuxt-link></li>
+    	<li><nuxt-link to="/shop">Shop</nuxt-link></li>
     	<li><nuxt-link to="/events">Events</nuxt-link></li>
     	<li><nuxt-link to="/connect">Connect</nuxt-link></li>                         
       </ul>
